@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Proyecto</title>
+	<link rel="stylesheet" href="estilos.css" />
+	<script src="https://kit.fontawesome.com/78ced824c0.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js%22%3E"></script>
+	<script src="responsiveslides.min.js"></script>
+	<script src="wow.min.js"></script>
+	<script src="carrusel.js"></script>
+	<script src="jquery.tinycarousel.js"></script>
+	<script src="jquery.tinycarousel.min.js"></script>
+	<script src="jquery.fancybox.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="jquery.fancybox.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet" />
+	<script>
+		new WOW().init();
+	</script>
+	<!-- Script Slaider -->
+	<script>
+		$(function () {
+			$("#slider4").responsiveSlides({
+				auto: false,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				before: function () {
+					$(".events").append("<li>before event fired.</li>");
+				},
+				after: function () {
+					$(".events").append("<li>after event fired.</li>");
+				},
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Menu inicio  -->
+	<header>
+		<div class="trapezoidal-shape">
+			<div class="barra">
+				<div class="correo">
+					<p>
+						<span><i class="fa-regular fa-envelope"></i></span>
+						example@gmail.com
+					</p>
+					<p>
+						<span><i class="fa-solid fa-location-dot"></i></span>1st Floor New
+						World.
+					</p>
+					<p>
+						<span><i class="fa-solid fa-phone"></i></span>+880 320 432 242
+					</p>
+				</div>
+				<div class="redes">
+					<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-square-twitter"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin"></i></a>
+					<a href=""><i class="fa-brands fa-pinterest"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="ancho head">
+			<div>
+				<figure class="imagenlogo" data-wow-duration="1s">
+					<img src="logo2.png" alt="" />
+				</figure>
+			</div>
+			<button class="menu-icon" aria-label="Abrir menú">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+			<nav class="">
+				<a href=""> <span>Home</span> </a>
+				<a href="galeria.html">Galery</a>
+				<a href="work_team.html">Work_Team</a>
+				<a href="">Pages</a>
+				<a href="">Blog</a>
+				<a href="contact.html">Contact</a>
+				<a class="boton_extra" href="">Get A Cuote</a>
+			</nav>
+		</div>
+	</header>
+	<br><br><br><br><br><br><br>
+	<!-- Menu final  -->
+	<i id="flecha" class="wow animate__animated animate__bounceInDown fa-solid fa-angle-up"></i>
+	<!-- Slaider inicio -->
+	<div class="wow animate__animated animate__fadeInUp  callbacks_container">
+		<ul class="rslides" id="slider4">
+			<li>
+				<img src="slider1.jpg" alt="" />
+				<p class="caption1">Welcome to dreamit</p>
+				<p class="caption2">Best Home Services</p>
+				<p class="caption3">Repairer Offers</p>
+				<p class="caption4">
+					Have a plumbing issue? Call 24 hours emergency services all time.
+				</p>
+				<p class="caption5">
+					<span class="tel"><i class="fa-solid fa-phone-flip"></i></span> 088
+					01318 254
+				</p>
+				<a class="caption6" href="">Get Started</a>
+				<a class="caption7" href="">Contact Us</a>
+			</li>
+			<li>
+				<img src="slider2.jpg" alt="" />
+				<p class="caption1">Welcome to dreamit</p>
+				<p class="caption2">Best Home Services</p>
+				<p class="caption3">Repairer Offers</p>
+				<p class="caption4">
+					Have a plumbing issue? Call 24 hours emergency services all time.
+				</p>
+				<p class="caption5">
+					<span class="tel"><i class="fa-solid fa-phone-flip"></i></span> 088
+					01318 254
+				</p>
+				<a class="caption6" href="">Get Started</a>
+				<a class="caption7" href="">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+	<!-- Slaider Final-->
+
+	<!-- Card -->
+	<section>
+		<div class="ancho cards_content1">
+			<div class="card_1 wow animate__animated  animate__fadeInUp">
+				<p><i class="fa-solid fa-car"></i></p>
+				<p class="cardtiltle">Handyman</p>
+				<p>Lorem ipsum dolor thises amet, consectetur is adipiscing elit</p>
+				<p class="icon_gris"><i class="fa-solid fa-car"></i></p>
+			</div>
+			<div class="card_1 wow animate__animated  animate__fadeInUp">
+				<p><i class="fa-solid fa-truck-fast"></i></p>
+				<p class="cardtiltle">Electrician</p>
+				<p>Lorem ipsum dolor thises amet, consectetur is adipiscing elit</p>
+				<p class="icon_gris"><i class="fa-solid fa-truck-fast"></i></p>
+			</div>
+			<div class="card_1 wow animate__animated  animate__fadeInUp">
+				<p><i class="fa-solid fa-car-side"></i></p>
+				<p class="cardtiltle">Plumber</p>
+				<p>Lorem ipsum dolor thises amet, consectetur is adipiscing elit</p>
+				<p class="icon_gris"><i class="fa-solid fa-car-side"></i></p>
+			</div>
+			<div class="card_1 wow animate__animated  animate__fadeInUp">
+				<p><i class="fa-solid fa-truck-monster"></i></p>
+				<p class="cardtiltle">Carpenter</p>
+				<p>Lorem ipsum dolor thises amet, consectetur is adipiscing elit</p>
+				<p class="icon_gris"><i class="fa-solid fa-truck-monster"></i></p>
+			</div>
+		</div>
+	</section>
+	<!-- Fin Card -->
+
+	<!-- article1 -->
+	<section class="ancho article1 ">
+		<article class="wow animate__animated  animate__fadeInLeftBig">
+			<p class="article1_title1">About</p>
+			<p class="article1_title2">20 Years Experience In The</p>
+			<p class="article1_title2">
+				Handyman <span class="amarilla">& Plumber</span>
+			</p>
+			<br /><br />
+			<p class="article1_parrafo">
+				Proin gravida nibh vel velit auctor aliquet. sollicitudi lorem quis
+				bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh elit
+				veniam, quis nostrud exercitation
+			</p>
+			<div class="iconos_article1">
+				<div class="iconos_article1content">
+					<i class="fa-solid fa-user-astronaut"></i>
+					<p class="titleicon_article1">The Best Quality Services</p>
+				</div>
+				<div class="iconos_article1content">
+					<i class="fa-solid fa-user-gear"></i>
+					<p class="titleicon_article1">Warranty & Maintenance</p>
+				</div>
+			</div>
+
+			<p class="list_article1">
+				<i class="fa-sharp fa-regular fa-circle-check"></i>Praesent quis odio
+				sit amet nisl luctus venenatis.
+			</p>
+			<p class="list_article1">
+				<i class="fa-sharp fa-regular fa-circle-check"></i>Regular solution
+				give for home problems by handyman.
+			</p>
+			<p class="list_article1">
+				<i class="fa-sharp fa-regular fa-circle-check"></i>Office Desk and
+				Floor Cleaning Services.
+			</p>
+			<a class="button_article1" href="">About More </a>
+		</article>
+
+		<figure class="wow animate__animated  animate__fadeInRightBig"><img src="article1.png" alt="" />
+		</figure>
+	</section>
+	<!-- Fin article1 -->
+
+	<!-- Seccion services -->
+
+	<section class="services">
+		<div class="ancho">
+			<div class="filter">
+				<div class="content_services ancho">
+					<p class="services_title1 wow animate__animated  animate__fadeInUpBig">OUR SERVICES</p>
+					<p class="services_title2 wow animate__animated  animate__fadeInUpBig">We Provide One Of The Best
+					</p>
+					<p class="services_title2 wow animate__animated  animate__fadeInUpBig">
+						Handyman <span class="amarilla">Services</span>
+					</p>
+					<div class="services_cards">
+						<div class="services_card1 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-robot"></i>Plumber Services
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+						<div class="services_card2 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-microchip"></i>Electrician Service
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+						<div class="services_card1 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-feather"></i>Painter Services
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+						<div class="services_card2 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-user-secret"></i>Carpenter Service
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+						<div class="services_card1 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-user-shield"></i>Cleaning Services
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+						<div class="services_card2 wow animate__animated  animate__fadeInUpBig">
+							<p class="services_title3">
+								<i class="fa-solid fa-users-gear"></i>Roof Services
+							</p>
+							<p>Lorem Ipsum simply dummy text of the printing</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <br> <br>
+	<!-- Fin seccion services -->
+
+	<!-- Seccion WHY CHOOSE US-->
+	<section>
+		<article class="ancho us">
+			<figure class="us_img1 wow animate__animated animate__fadeInLeftBig">
+				<img src="us.jpg" alt="" />
+			</figure>
+			<div class="contentp  wow animate__animated animate__fadeInRightBig">
+				<p class="us_title">WHY CHOOSE US</p>
+				<p class="us_title2">Offer Reliable Services For</p>
+				<p class="us_title2">
+					Most Mome <span class="amarilla">Services</span>
+				</p>
+				<p class="us_parrafo">
+					Proin gravida nibh vel velit auctor aliquet. sollicitudi lorem quis
+					bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh elit
+					veniam, quis nostrud exercitation
+				</p>
+				<figure class="us_img2 wow animate__animated animate__fadeInRightBig">
+					<img src="barras.png" alt="" />
+				</figure>
+			</div>
+		</article>
+	</section>
+	<!-- fin Seccion WHY CHOOSE US -->
+
+	<!-- Seccion CASE STUDY WORK -->
+	<section>
+		<div class="ancho study_Work">
+			<p class="services_title1 wow animate__animated animate__fadeInUpBig">CASE STUDY WORK</p>
+			<p class="services_title2 wow animate__animated animate__fadeInUpBig">
+				Handyman Best Work & <br />
+				Solution Project
+			</p>
+			<div class="container">
+				<div class="mySlides">
+					<img src="carrusel1.jpg" alt="imagen-1" />
+					<div class="texto animate__animated animate__fadeInLeft">
+						<p>
+							Plumbing Services <br />
+							<span class="amarilla">Plumbing</span>
+						</p>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="carrusel2.jpg" alt="" />
+					<div class="texto animate__animated animate__fadeInLeft">
+						<p>
+							Electrician Services <br />
+							<span class="amarilla">Electrician</span>
+						</p>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="carrusel3.jpg" alt="" />
+					<div class="texto animate__animated animate__fadeInLeft">
+						<p>
+							Industries Solution<br />
+							<span class="amarilla">Construcción</span>
+						</p>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="carrusel4.jpg" alt="" />
+					<div class="texto animate__animated animate__fadeInLeft">
+						<p>
+							Handyman Services <br />
+							<span class="amarilla">Handyman</span>
+						</p>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="carrusel5.jpg" alt="imagen-1" />
+					<div class="texto animate__animated animate__fadeInLeft">
+						<p>
+							Plumbing Services <br />
+							<span class="amarilla">Plumbing</span>
+						</p>
+					</div>
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="elements">
+					<span class="quadrate" onclick="currentSlide(1)"></span>
+					<span class="quadrate" onclick="currentSlide(2)"></span>
+					<span class="quadrate" onclick="currentSlide(3)"></span>
+					<span class="quadrate" onclick="currentSlide(4)"></span>
+					<span class="quadrate" onclick="currentSlide(5)"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Fin Seccion CASE STUDY WORK -->
+	<!-- Seccion CASE STUDY WORK2 -->
+	<section class="ancho seccion2_Case_study_Work">
+		<div class="grid">
+			<div class="cards_study ">
+				<div class="card_study2 wow animate__animated animate__fadeInLeftBig ">
+					<p><span class="icont_card_study2"><i class="fas fa-robot"></i></span></p>
+					<p class="num">3641</p>
+					<p class="text_Card">Complete Project</p>
+				</div>
+				<div class="card_study wow animate__animated animate__fadeInRightBig">
+					<p><span class="amarilla icont_card_study2"><i class="fas fa-person-digging"></i></span></p>
+					<p class="num">265</p>
+					<p class="text_Card">Client Satisfied</p>
+				</div>
+				<div class="card_study wow animate__animated animate__fadeInLeftBig">
+					<p><span class="amarilla icont_card_study2"><i class="fas fa-screwdriver-wrench"></i></span></p>
+					<p class="num">265</p>
+					<p class="text_Card">Complete Award</p>
+				</div>
+				<div class="card_study2 wow animate__animated animate__fadeInRightBig">
+					<p><span class="icont_card_study2"><i class="fas fa-bolt"></i></span></p>
+					<p class="num">2451</p>
+					<p class="text_Card">Happy Client</p>
+				</div>
+			</div>
+
+		</div>
+		<div class="sidebar">
+			<div class="content2">
+				<p class="us_title wow animate__animated animate__fadeInRightBig">DREAMIT COMPANY</p>
+				<p class="us_title2 wow animate__animated animate__fadeInRightBig">Our Company Is At Your</p>
+				<p class="us_title2 wow animate__animated animate__fadeInRightBig">
+					Service At <span class="amarilla">All Times</span>
+				</p>
+				<p class="us_parrafo wow animate__animated animate__fadeInRightBig">
+					Proin gravida nibh vel velit auctor aliquet. sollicitudi lorem quis
+					bibendum auctor, nisi elit consequat ipsum, sagittis sem nibh elit
+					veniam, quis nostrud exercitation
+				</p>
+				<p class=" list_article1 wow animate__animated animate__fadeInRightBig">
+					<i class="check fa-solid fa-check"></i>Proin gravida nibh vel velit auctor aliquet. sollicitudi
+					lorem quis bibendum auctor, nisi elit consequat
+				</p>
+
+				<p class="list_article1 wow animate__animated animate__fadeInRightBig">
+					<i class="check fa-solid fa-check"></i>Proin gravida nibh vel velit auctor aliquet. sollicitudi
+					lorem quis bibendum auctor, nisi elit consequat
+				</p>
+
+				<a class=" button_article1 wow animate__animated animate__fadeInUpBig" href="">About More </a>
+
+			</div>
+		</div>
+	</section>
+	<!-- Fin Seccion CASE STUDY WORK2 -->
+
+
+	<!-- Seccion services -->
+
+	<section class="services margin">
+		<div class="filter">
+			<div class=" services_cont ancho wow animate__animated animate__fadeInRightBig">
+				<div>
+					<p class="services_title1">OUR TEAM</p>
+					<hr class="barra_amarilla">
+					<p class="services_title2">Our Motivated Skilled <br>
+						Experience Team</p>
+				</div>
+
+				<div>
+					<a class=" button_article2" href="">About More </a>
+
+				</div>
+			</div>
+
+			<div class="content_imagenes ancho">
+				<div class="card_imagenes wow animate__animated animate__fadeInUpBig">
+					<figure><img src="imagen1.jpg" alt=""></figure>
+					<p class="card_imagenes_title"> <a href="">Hossen Babu Orfe</a> </p>
+					<p class="card_imagenes_subtitle">Web Developer</p>
+					<p>
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</p>
+
+				</div>
+				<div class="card_imagenes wow animate__animated animate__fadeInUpBig">
+					<figure><img src="imagen2.jpg" alt=""></figure>
+					<p class="card_imagenes_title"><a href="">Mostofa Kamal</a></p>
+					<p class="card_imagenes_subtitle">CLEANING REPAIR</p>
+					<p>
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</p>
+				</div>
+				<div class="card_imagenes wow animate__animated animate__fadeInUpBig">
+					<figure><img src="imagen3.jpg" alt=""></figure>
+					<p class="card_imagenes_title"> <a href="">Mehedi Hassan Raj</a> </p>
+					<p class="card_imagenes_subtitle">ELECTRICAL</p>
+					<p>
+						<i class="fa-brands fa-facebook-f"></i>
+						<i class="fa-brands fa-twitter"></i>
+						<i class="fa-brands fa-linkedin-in"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Fin seccion services -->
+
+	<!-- CLIENTS TESTIMONIALS -->
+	<section class="wow animate__animated animate__fadeInUpBig">
+		<div class="clients_testimonial ancho">
+			<p class="us_title"> OUR CLIENTS TESTIMONIALS</p>
+			<p class="us_title2"> What People Say <br>
+				For Your Happy Client </p>
+		</div>
+		<div class="ancho">
+			<div id="slider1">
+				<div class="viewport">
+					<ul class="overview">
+						<li class="card alto">
+							<div class="caja">
+								<p>
+									<span class="iconfin"><i class="fa-solid fa-comment"></i></span>
+								</p>
+								<p>Lorem ipsum dolor sit amet saresw consectetur adipis cing elit sed do eiusmod tempor
+									incidi dunt ut labore etolore magna aliqua ipsum suspen disse ultrices ida commodo.
+								</p>
+								<div class="triangulo">
+								</div>
+							</div>
+							<br>
+							<figure class="content_imagenes2"> <img src="person1.jpg" alt=""></figure>
+							<p class="p_recomentd">Hossen Babu Orfe</p>
+							<p class="amarilla p_recomentd">Electrician</p>
+						</li>
+						<li class="card bajo ">
+							<div class="caja">
+								<p>
+									<span class="iconfin"><i class="fa-solid fa-comment"></i></span>
+								</p>
+								<p>Lorem ipsum dolor sit amet saresw consectetur adipis cing elit sed do eiusmod tempor
+									incidi dunt ut labore etolore magna aliqua ipsum suspen disse ultrices ida commodo.
+								</p>
+								<div class="triangulo">
+								</div>
+							</div>
+							<br>
+							<figure class="content_imagenes2"> <img src="person2.jpg" alt=""></figure>
+							<p class="p_recomentd">Hossen Babu Orfe</p>
+							<p class="amarilla p_recomentd">Electrician</p>
+						</li>
+						<li class="card alto">
+							<div class="caja">
+								<p>
+									<span class="iconfin"><i class="fa-solid fa-comment"></i></span>
+								</p>
+								<p>Lorem ipsum dolor sit amet saresw consectetur adipis cing elit sed do eiusmod tempor
+									incidi dunt ut labore etolore magna aliqua ipsum suspen disse ultrices ida commodo.
+								</p>
+								<div class="triangulo">
+								</div>
+							</div>
+							<br>
+							<figure class="content_imagenes2"> <img src="person3.jpg" alt=""></figure>
+							<p class="p_recomentd">Hossen Babu Orfe</p>
+							<p class="amarilla p_recomentd">Electrician</p>
+						</li>
+						<li class="card bajo">
+							<div class="caja">
+								<p>
+									<span class="iconfin"><i class="fa-solid fa-comment"></i></span>
+								</p>
+								<p>Lorem ipsum dolor sit amet saresw consectetur adipis cing elit sed do eiusmod tempor
+									incidi dunt ut labore etolore magna aliqua ipsum suspen disse ultrices ida commodo.
+								</p>
+								<div class="triangulo">
+								</div>
+							</div>
+							<br>
+							<figure class="content_imagenes2"> <img src="person1.jpg" alt=""></figure>
+							<p class="p_recomentd">Hossen Babu Orfe</p>
+							<p class="amarilla p_recomentd">Electrician</p>
+						</li>
+						<li class="card bajo">
+							<div class="caja">
+								<p>
+									<span class="iconfin"><i class="fa-solid fa-comment"></i></span>
+								</p>
+								<p>Lorem ipsum dolor sit amet saresw consectetur adipis cing elit sed do eiusmod tempor
+									incidi dunt ut labore etolore magna aliqua ipsum suspen disse ultrices ida commodo.
+								</p>
+								<div class="triangulo">
+								</div>
+							</div>
+							<br>
+							<figure class="content_imagenes2"> <img src="person2.jpg" alt=""></figure>
+							<p class="p_recomentd">Hossen Babu Orfe</p>
+							<p class="amarilla p_recomentd">Electrician</p>
+						</li>
+					</ul>
+				</div>
+				<div class="contenedor_flechas">
+					<a class="buttons prev " href="#"></a>
+					<a class="buttons next " href="#"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Fin CLIENTS TESTIMONIALS -->
+
+
+	<!-- INICIO FOOTER -->
+	<footer class="wow animate__animated animate__fadeInUpBig">
+		<div class="contfooter ancho">
+			<div class="contfooter_1">
+				<img src="logofoot.png" alt="">
+				<br><br>
+				<p>Sedut perspiciatis unde omnis iste natus error sitlutem acc usantium doloremque</p>
+				<br><br>
+				<div class="botones_footer">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				</div>
+			</div>
+			<article class="help_link">
+				<h4>Our Service</h4>
+				<br><br>
+				<a href="#">- Our Services</a>
+				<br>
+				<a href="#">- Electrician Services</a>
+				<br>
+				<a href="#">- Handyman Service</a>
+				<br>
+				<a href="#">- Plumbing Services</a>
+				<br>
+				<a href="#">-Repair Services</a>
+			</article>
+
+
+			<div class="recent_posts">
+				<h4>Recent Posts</h4>
+				<br><br>
+				<div class="img1_p_footer">
+					<div class="foto1_footer">
+						<img src="footer.jpg" alt="">
+					</div>
+					<div class="p_date_footer">
+						<h6>Plumbing Tips For Winter and summer.</h6>
+						<p class="date">10, July 2023</p>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<br>
+				<div class="img1_p_footer">
+					<div class="foto1_footer">
+						<img src="footer2.jpg" alt="">
+					</div>
+					<div class="p_date_footer">
+						<h6>Equipping Researchers in the Developing.</h6>
+						<p class="date">10, July 2023</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="company_info">
+				<h4>Company Info</h4>
+				<br><br>
+				<div class="locations_info">
+					<div class="icono_footer">
+						<i class="fa-solid fa-house"></i></i>
+					</div>
+					<div class="h5_p_footer">
+						<h5>Adress:</h5>
+						<p>Dhaka, Bangladesh Road 22</p>
+					</div>
+				</div>
+				<br>
+				<div class="locations_info">
+					<div class="icono_footer">
+						<i class="fa-solid fa-phone-flip"></i>
+					</div>
+					<div class="h5_p_footer">
+						<h5>Phone:</h5>
+						<p>+088 4785 6589</p>
+					</div>
+				</div>
+				<br>
+				<div class="locations_info">
+					<div class="icono_footer">
+						<i class="fa-solid fa-globe"></i>
+					</div>
+					<div class="h5_p_footer">
+						<h5>Email</h5>
+						<p>Example@gmail.com
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<br>
+		<div class="about_us_footer ancho">
+			<p class="copyright">Copyright © dreamit all rights reserved.</p>
+
+		</div>
+		<br><br>
+	</footer>
+	<!-- FIN FOOTER -->
+
+
+	<!-- Scripts java  -->
+	<!-- Menuuu -->
+	<script>
+		const menuIcon = document.querySelector(".menu-icon");
+		const nav = document.querySelector("nav");
+
+		menuIcon.addEventListener("click", function () {
+			nav.classList.toggle("active");
+			menuIcon.classList.toggle("active");
+		});
+
+		window.addEventListener("resize", function () {
+			if (window.innerWidth > 480) {
+				nav.classList.remove("active");
+				menuIcon.classList.remove("active");
+			}
+		});
+	</script>
+
+	<!-- Carrucel Imagenes -->
+	<script>
+		let slideIndex = 1;
+		let autoSlideInterval;
+
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			clearInterval(autoSlideInterval); // Limpiar el intervalo al seleccionar manualmente una imagen
+			showSlides((slideIndex += n));
+		}
+
+		function currentSlide(n) {
+			clearInterval(autoSlideInterval); // Limpiar el intervalo al seleccionar manualmente una imagen
+			showSlides((slideIndex = n));
+		}
+
+		function showSlides(n) {
+			let i;
+			let slides = document.querySelectorAll(".mySlides");
+			let quadrates = document.querySelectorAll(".quadrate");
+			if (n > slides.length) slideIndex = 1;
+			if (n < 1) slideIndex = slides.length;
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < quadrates.length; i++) {
+				quadrates[i].className = quadrates[i].className.replace(
+					" active",
+					""
+				);
+			}
+			slides[slideIndex - 1].style.display = "block";
+			quadrates[slideIndex - 1].className += " active";
+
+			// Iniciar el intervalo automáticamente para el pase automático
+			autoSlideInterval = setInterval(() => {
+				plusSlides(1);
+			}, 5000); // Intervalo de 5 segundos (5000 milisegundos)
+		}
+	</script>
+	<!-- Carucel  -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#slider1').tinycarousel();
+		});
+	</script>
+	<script>
+		new WOW().init();
+		$(document).ready(function () {
+			$('.card').hover(function () {
+				$(this).find('.iconos a').addClass('fadeInUp');
+			}, function () {
+				$(this).find('.iconos a').removeClass('fadeInUp');
+			});
+		});
+	</script>
+	<!-- boton -->
+	<script>
+		$(document).ready(function () {
+			$("#flecha").click(function () {
+				$("html,body").animate(
+					{
+						scrollTop: "0px",
+					},
+					1000
+				);
+			});
+		});
+	</script>
+
+
+</body>
+
+</html>
